@@ -27,7 +27,6 @@
     [super viewDidLoad];
     self.title = @"阅读";
     self.view.backgroundColor = [UIColor whiteColor];
-    
     // 添加子控制器
     [self setupAllChildViewController];
     

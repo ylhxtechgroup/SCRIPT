@@ -67,9 +67,9 @@
     
     self.authorLab.frame = CGRectMake(SCREEN_WIDTH - gap - 90 * Rate, gap + 5 * Rate, 90 * Rate, 16 * Rate);
     
-    self.detailsLab.frame = CGRectMake(gap, CGRectGetMaxY(self.nameLab.frame) + gap, 100 * gap, 88 * Rate);
-    
-    self.exceptionalBtn.frame = CGRectMake(gap, CGRectGetMaxY(self.nameLab.frame) + gap, SCREEN_WIDTH - 2 * gap, 88 * Rate);
+    self.detailsLab.frame = CGRectMake(gap, CGRectGetMaxY(self.nameLab.frame) + gap, 220*Rate, 88 * Rate);
+   
+    self.exceptionalBtn.frame = CGRectMake(SCREEN_WIDTH - gap - 50 * Rate, CGRectGetMaxY(self.nameLab.frame) + gap*2, 50*Rate, 50 * Rate);
 
     self.fenleiLab.frame = CGRectMake(gap, CGRectGetMaxY(self.detailsLab.frame) + gap/2, 25 * Rate, 21 * Rate);
     
