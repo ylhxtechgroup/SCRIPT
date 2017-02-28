@@ -1,0 +1,71 @@
+//
+//  Script.pch
+//  Script
+//
+//  Created by apple on 2017/2/27.
+//  Copyright © 2017年 apple. All rights reserved.
+//
+
+#ifndef Script_pch
+#define Script_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* Script_pch */
+#ifdef  __OBJC__
+
+/**
+ *  公共头文件
+ */
+#import "UIImage+Render.h"
+
+
+
+
+
+
+
+/**
+ *  自定义输出
+ */
+#define JLLog(...)  (NSLog(@" \n类：%@ \n方法：%s \t\t第  %d  行 \n输出：%@\n\n",[self class],__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__]))
+/**
+ *  屏幕适配
+ */
+#define JLScreenW  [UIScreen mainScreen].bounds.size.width
+#define JLScreenH  [UIScreen mainScreen].bounds.size.height
+#define Rate UIScreen.mainScreen.bounds.size.width/320
+
+#define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define iPhone6P (JLScreenH == 736)
+#define iPhone6 (JLScreenH == 667)
+#define iPhone5 (JLScreenH == 568)
+#define iPhone4 (JLScreenH == 480)
+
+/**
+ *  系统适配
+ */
+
+#define JLSystemValue  ([UIDevice currentDevice].systemVersion.floatValue)
+
+
+
+
+
+
+
+
+#define baseUrl @"http://www.ydh123.com/api/v1/"
+
+#define postLogin     @"postLoginSucess"
+#define postLogOut    @"postLogOutSucess"
+#define firstLaunch   @"firstLaunch"
+
+
+
+
+
+#endif
