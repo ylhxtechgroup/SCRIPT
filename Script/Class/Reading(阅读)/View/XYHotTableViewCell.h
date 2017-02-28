@@ -16,6 +16,8 @@
 
 @property (nonatomic, strong) UILabel *detailsLab;
 
+@property (nonatomic, strong) UIButton *exceptionalBtn;
+
 @property (nonatomic, strong) UILabel *fenleiLab;
 
 @property (nonatomic, strong) UILabel *numberLab;
