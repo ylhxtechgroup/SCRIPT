@@ -105,7 +105,6 @@
 //    vc3.tabBarItem.image = [UIImage imageNamed:@"Creat"];
 //    vc3.tabBarItem.selectedImage = [UIImage imageWithOriginalRender:@"Creat-c"];
     [self addChildVc:vc3 title:@"创作" image:@"Creat" selectedImage:@"Creat-c"];
-
     // 4
     UIViewController *vc4 = self.childViewControllers[4];
 //    vc4.tabBarItem.title = @"我";

@@ -7,42 +7,60 @@
 //
 
 #import "JLHotController.h"
+#import "XYHotTableViewCell.h"
+@interface JLHotController ()<UITableViewDelegate,UITableViewDataSource>
 
-
-
-
-@interface JLHotController ()
+@property (nonatomic, strong) UITableView *mainTableView;
+@property (nonatomic, strong) NSMutableArray *datas;
 
 @end
 
-static NSString * const ID = @"hot";
 @implementation JLHotController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
-//    [self.tableView registerNib:[UINib nibWithNibName:@"JLReadCell" bundle:nil] forCellReuseIdentifier:ID];
+    [self layouTableView];
 }
-
-#pragma mark - Table view data source
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 40;
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 44;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)layouTableView{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
+    self.mainTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64 - 35 - 49) style:UITableViewStylePlain];
+    self.mainTableView.delegate = self;
+    self.mainTableView.dataSource = self;
+    self.mainTableView.rowHeight = 154 * Rate;
+    self.mainTableView.separatorStyle = UITableViewCellAccessoryNone;
+    [self.view addSubview:self.mainTableView];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"玄幻玄幻玄幻玄幻玄幻玄幻%ld",indexPath.row];
-  
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSString *cellID = @"hotCell";
+    
+    XYHotTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
+    if (cell == nil) {
+        
+        cell = [[XYHotTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        
+    }
+    
+    [cell setDetailsModel];
+    
     return cell;
     
 }
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
+
 
  
  @end

@@ -33,6 +33,7 @@
 		18CD0C411E63D16F00E1A161 /* JLMeController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CD0C021E63D16F00E1A161 /* JLMeController.storyboard */; };
 		18CD0C581E63D16F00E1A161 /* CustomError.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C2F1E63D16F00E1A161 /* CustomError.m */; };
 		18CD0C591E63D16F00E1A161 /* UIImage+Render.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CD0C311E63D16F00E1A161 /* UIImage+Render.m */; };
+		88325EDA1E654F6800D43A2E /* XYHotTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88325ED91E654F6800D43A2E /* XYHotTableViewCell.m */; };
 		88F04ACE1E65213C009D48EE /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F04ACD1E65213C009D48EE /* 123.png */; };
 		88F04AD11E6522A7009D48EE /* XYContractTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F04AD01E6522A7009D48EE /* XYContractTableViewCell.m */; };
 		88F04AD31E652341009D48EE /* qianyue.png in Resources */ = {isa = PBXBuildFile; fileRef = 88F04AD21E652341009D48EE /* qianyue.png */; };
@@ -109,6 +110,8 @@
 		18CD0C301E63D16F00E1A161 /* UIImage+Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Render.h"; sourceTree = "<group>"; };
 		18CD0C311E63D16F00E1A161 /* UIImage+Render.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Render.m"; sourceTree = "<group>"; };
 		18CD0C641E63D2C300E1A161 /* Script.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Script.pch; sourceTree = "<group>"; };
+		88325ED81E654F6800D43A2E /* XYHotTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYHotTableViewCell.h; sourceTree = "<group>"; };
+		88325ED91E654F6800D43A2E /* XYHotTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYHotTableViewCell.m; sourceTree = "<group>"; };
 		88F04ACD1E65213C009D48EE /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
 		88F04ACF1E6522A7009D48EE /* XYContractTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYContractTableViewCell.h; sourceTree = "<group>"; };
 		88F04AD01E6522A7009D48EE /* XYContractTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYContractTableViewCell.m; sourceTree = "<group>"; };
@@ -457,6 +460,8 @@
 		18CD0C281E63D16F00E1A161 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88325ED81E654F6800D43A2E /* XYHotTableViewCell.h */,
+				88325ED91E654F6800D43A2E /* XYHotTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -788,6 +793,7 @@
 				18C45F291E6432880032B8D6 /* YZDisplayViewController.m in Sources */,
 				18C45F041E640D5A0032B8D6 /* JLReadViewController.m in Sources */,
 				18CD0C591E63D16F00E1A161 /* UIImage+Render.m in Sources */,
+				88325EDA1E654F6800D43A2E /* XYHotTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
