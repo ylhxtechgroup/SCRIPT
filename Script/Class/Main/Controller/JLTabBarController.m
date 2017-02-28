@@ -112,7 +112,6 @@
 //    vc4.tabBarItem.image = [UIImage imageNamed:@"Me"];
 //    vc4.tabBarItem.selectedImage = [UIImage imageWithOriginalRender:@"Me-c"];
     [self addChildVc:vc4 title:@"我" image:@"Me" selectedImage:@"Me-c"];
-
 }
 
 
@@ -130,9 +129,6 @@
     selectTextAttrs[NSForegroundColorAttributeName] = [UIColor purpleColor];
     [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     [childVc.tabBarItem setTitleTextAttributes:selectTextAttrs forState:UIControlStateSelected];
-    
-    
-    
     
 }
 @end
